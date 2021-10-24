@@ -1,5 +1,9 @@
 ## Equal Voices
 
+You can download the APK here: [Equal Voices](http://sendanywhe.re/QTSI2ONY)
+
+### About the Project
+
 Our Vision is to give people a platform to speak their mind about events that affect us as a community, irrespective of background.
 
 There are several examples of structural injustices becoming commonplace, let alone being overlooked - for example, the Untouchables that lasted until India gained independence, and the systemic racism of Black and Latino populations in the US that is ongoing today. We disassociate with these horrific events because it seems so far away from us - and those affected by these events oftentimes suffer silently.
