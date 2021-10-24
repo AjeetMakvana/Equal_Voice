@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.xlentdevs.spectrum.ui.dashboard.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_discoverFragment"
+            app:destination="@id/discoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.xlentdevs.spectrum.ui.dashboard.discover.DiscoverFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomChatFragment"
+        android:name="com.xlentdevs.spectrum.ui.dashboard.randomchat.RandomChatFragment"
+        android:label="fragment_random_chat"
+        tools:layout="@layout/fragment_random_chat" />
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.xlentdevs.spectrum.ui.dashboard.chatroom.ChatRoomFragment"
+        android:label="fragment_chat_room"
+        tools:layout="@layout/fragment_chat_room" >
+        <action
+            android:id="@+id/action_chatRoomFragment_to_randomChatFragment"
+            app:destination="@id/randomChatFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatsFragment"
+            app:destination="@id/chatsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.xlentdevs.spectrum.ui.dashboard.chats.ChatsFragment"
+        android:label="ChatsFragment"
+        tools:layout="@layout/fragment_chats">
+        <argument
+            android:name="roomUid"
+            app:argType="string"/>
+
+        <argument
+            android:name="roomName"
+            app:argType="string" />
+
+        <argument
+            android:name="roomPhoto"
+            app:argType="string" />
+
+        <argument
+            android:name="roomDescription"
+            app:argType="string" />
+
+        <argument
+            android:name="roomTag"
+            app:argType="string" />
+    </fragment>
+</navigation>

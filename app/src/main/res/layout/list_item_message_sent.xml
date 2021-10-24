@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.xlentdevs.spectrum.ui.dashboard.chats.ChatViewModel" />
+
+        <variable
+            name="message"
+            type="com.xlentdevs.spectrum.data.db.entity.Message" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:bind_epochTimeMsToDate="@{message.epochTimeMs}"
+            app:bind_message="@{message}"
+            app:bind_message_viewModel="@{viewmodel}"
+            tools:text="11:40" />
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/message_sent_bg"
+            android:maxWidth="240dp"
+            android:paddingVertical="6dp"
+            android:paddingHorizontal="12dp"
+            android:text="@{message.text}"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:text="This is a message" />
+    </LinearLayout>
+</layout>
