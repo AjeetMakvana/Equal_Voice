@@ -1,7 +1,5 @@
 ## Equal Voices
 
-You can download the APK here: [Equal Voices](http://sendanywhe.re/QTSI2ONY)
-
 ### About the Project
 
 Our Vision is to give people a platform to speak their mind about events that affect us as a community, irrespective of background.
